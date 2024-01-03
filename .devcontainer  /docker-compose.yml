@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   devcontainer:
-    image: wso2/wso2am:4.2.0-alpine
+    image: fdquinones/wso2am:4.2.0
     volumes:
       - ../..:/workspaces:cached
     network_mode: service:db
@@ -10,3 +10,11 @@ services:
       - "9443:9443"
       - "8280:8280"
       - "8243:8243"
+      - "9763:9763"
+      - "9999:9999"
+      - "11111:11111"
+      - "5672:5672"
+      - "9711:9711"
+      - "9611:9611"
+      - "9099:9099"
+    
