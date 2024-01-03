@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  devcontainer:
+    image: fdquinones/wso2am:4.2.0-multiarch
+    volumes:
+      - ./deployment.toml:/home/wso2carbon/wso2am-4.2.0/repository/conf/deployment.toml
+      #- ./catalina-server.xml:/home/wso2carbon/wso2am-4.2.0/repository/conf/tomcat/catalina-server.xml 
+    ports:
+      - "9443:9443"
+      - "8280:8280"
+      - "8243:8243"
+      - "9763:9763"
+      - "9999:9999"
+      - "11111:11111"
+      - "5672:5672"
+      - "9711:9711"
+      - "9611:9611"
+      - "9099:9099"
+    

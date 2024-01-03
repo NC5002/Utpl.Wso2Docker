@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!--
-  felipe
+    fdquinones
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
   this work for additional information regarding copyright ownership.
@@ -106,7 +106,7 @@
                 <Valve className="org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve" threshold="600"/>
                 <Valve className="org.wso2.carbon.tomcat.ext.valves.CompositeValve"/>
 
-                <!-- Authentication and Authorization valve for the rest apis and we can configure context for this in identity.xml  -->
+		<!-- Authentication and Authorization valve for the rest apis and we can configure context for this in identity.xml  -->
                 <Valve className="org.wso2.carbon.identity.auth.valve.AuthenticationValve"/>
                 <Valve className="org.wso2.carbon.identity.authz.valve.AuthorizationValve"/>
                 <Valve className="org.wso2.carbon.tomcat.ext.valves.SameSiteCookieValve"/>
@@ -118,3 +118,4 @@
         </Engine>
     </Service>
 </Server>
+
