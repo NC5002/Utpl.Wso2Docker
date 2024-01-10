@@ -264,3 +264,6 @@ compression = "off"
 
 [transport.properties.items]
 compression = "off"
+
+[[apim.gateway.environment.virtual_host]]
+https_endpoint = "https://laughing-spoon-g4q5p747q7w6hw9px-8243.app.github.dev/"
